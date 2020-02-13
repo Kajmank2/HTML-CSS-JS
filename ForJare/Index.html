@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="Text">
+        Sprawdz ile możesz zaoszczedzić
+    </div>
+    <div class="Opis">
+        Miesieczy rachunek za prąd: 
+        <span id="miesrach">997</span>
+        zl
+    </div>  
+    <div>
+        <div class="slidecontainer">
+            <input type="range" min="0" max="1500" value="0" class="slider" id="myRange">
+            <div class="left">0 zł</div>
+            <div class="rigt">1500zł</div>
+        </div>
+    </div>
+    <div id="colums4">
+        <div id="colum2left">
+    <div class="left-side-conteiner">
+        Wielkość instalacji:<br>
+        <span id="side-left-up">19</span>
+        <span>kWp</span>
+    </div>
+        <div class="left-side-conteiner2">
+        Koszt brutto instalacji od 
+        <br>
+        <span id="side-left-down">1000</span>
+        <span>zł</span>
+    </div>
+</div>
+<div id="column2right">
+    <div class="right-side-conteiner">
+        Roczne zapotrzebowanie energii
+  <br>
+        <span id = "side-right-up">19.8</span>
+        <span>kWp</span>
+    </div>
+            <div class="right-side-conteiner2">
+        Dotacja 'Mój Prąd' obejmuje instalacje od 2 do 10 kWp
+        <br>
+        <span id="side-right-down">
+            86.31
+        </span>
+       <span>zł</span>
+    </div>
+</div>
+</div>
+<hr color="red">
+<div class="Sumup">
+    <div id="column1">
+            Roczny koszt enegii bez instalacji fotowoltanowczej
+            <br>
+            <span id="first">12</span>
+            zł
+        </div>
+            <div id="column2">
+            Roczny koszt enegii z instalacją fotowaltaniczną
+            <br>
+            <span id="first">255.13</span>
+        </div>
+        <div id="column3">
+            Oszczędności na energii w ciągu 25 lat <br>
+            -<span id="first">4312.58</span>
+        </div>
+</div>
+<div class="btn">
+    <button class="button">ZAMÓW BEZPŁATNĄ ANALIZĘ</button>
+</div>
+</body>
+</html>
+<script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("miesrach");
+    var outputUp = document.getElementById("side-left-up")
+    var outputDown= document.getElementById("side-left-down")
+    var outputRightDown = document.getElementById("side-right-down")
+    var outputRightUp = document.getElementById("side-right-up")
+    output.innerHTML = slider.value;
+    outputUp.innerHTML = slider.value;
+    outputDown.innerHTML = slider.value;
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+      outputUp.innerHTML=  Math.floor(this.value * 0.02)+ "." + (this.value % 60 ?this.value % 60 : '00');
+      outputDown.innerHTML = Math.floor(this.value*86.31)+ "." + (this.value % 60 ?this.value % 60 : '00');
+      outputRightDown.innerHTML = Math.floor(this.value*19.80)+ "." + (this.value % 60 ?this.value % 60 : '00');
+      outputRightUp.innerHTML = Math.floor(this.value*86.31)+ "." + (this.value % 60 ?this.value % 60 : '00');
+    }
+
+    </script>

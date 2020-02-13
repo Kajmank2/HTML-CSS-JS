@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="title">
+        <h1>
+            FORM BY KAJMAN ! ! !
+        </h1>
+        <div id="description">
+        <h3>That is my first form wchich I create ! </h3>
+        </div>
+    </div>
+    <form>
+    <div id="survey-form">
+        <div class="form-group"> 
+            <label id="name-label" for="name">Name</label>
+           <input type="text" name="name" id="name" placeholder="Enter your name" class="form-control" required>
+        </div>
+        <div id ="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter your Email" class="form-control" required>            
+        </div>
+        <div id ="form-group">
+            <label id="age-label" for="age">Age</label>
+            <input type="text" name="age" id="age" placeholder="Age" class="form-control" required min="10" max="99" >            
+        </div>
+        <div id="form-group">
+        <p>Enter you role !</p>
+        <select id= "dropdown" name="role" class="form-control" required>
+            <option disabled selected value="Select your favorite Leaungage"></option>
+            <option value="C#">C#</option>
+            <option value="JAVA">Java</option>
+            <option value="Python">Python</option>
+            <option value="HTML">Html</option>
+          </select>
+          </div>
+          <div id ="form-group">
+            <p>Choose your Level</p>
+            <label>
+                <input name="user-level" value="Pro" type="radio" class="input-radio" checked>
+                "Pro"
+            </label>
+            <label>
+                <input name="user-level" value="Medium" type="radio" class="input-radio" >
+                "Medium"
+            </label>
+            <label>
+                <input name="user-level" value="Amateour" type="radio" class="input-radio" checked>
+                "Amateour"
+            </label>
+        </div>
+        <div id ="form-group">
+            <p>Select your abilities</p>
+            <label>
+            <input type="checkbox" value="Punctual"  class="input-checkox"> 
+            Punctual          
+            </label>
+            <label>
+                <input type="checkbox"  value="Self-Confident  "  class="input-checkox">
+                Self-Confident            
+                </label>
+                <label>
+                    <input type="checkbox"  value="Nice"  class="input-checkox">
+                    Nice            
+                    </label>
+                    <label>
+                        <input type="checkbox"  value="pleasant  " class="input-checkox">
+                        pleasant            
+                        </label>
+        </div>
+        <div id ="form-group">
+        <p>Give us more information about you</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter info about you"></textarea>
+    </div>
+    <div id ="form-group">
+        <button type="submit" id="sumbit" class="submit-button"> Sumbit</button>
+    </div>
+</form>
+</body>
+</html>

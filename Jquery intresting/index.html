@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jquery.multiscroll.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="multiscroll">
+<div class="ms-left">
+    <div class="ms-section one">1
+        <h1>Karol Kaim</h1>
+        <p>Proffesional It Studen</p>
+        <a href="#">Contact</a>
+    </div>
+    <div class="ms-section two">2</div>
+    <div class="ms-section three">3</div>
+</div>
+<div class="ms-right">
+<div class="ms-section four">1</div>
+<div class="ms-section five">
+<h2>Why me?</h2>
+<p>i have working in It Sector</p>
+</div>
+<div class="ms-section six">
+<h2> Contact Me</h2>
+<input type="text" placeholder="your name..">
+<input type="email" placeholder="your Email...">
+<a href="#">Submit</a>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.easings.min.js"></script>
+    <script src="jquery.multiscroll.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#multiscroll').multiscroll({
+            navigation: true,
+            navigationPosition: 'right',
+            navigationColor:'#000'
+        });
+    });
+    </script>
+</body>
+</html>

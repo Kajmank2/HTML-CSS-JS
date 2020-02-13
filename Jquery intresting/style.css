@@ -1,0 +1,82 @@
+.one{
+    background: crimson;
+    color: #fff;
+    text-align: center;
+}
+.one h1{
+    font-size: 65px;
+    margin: 0;
+    font-family: big john;
+}
+.one p{
+    padding: 0 15%;
+    font-size: 25px;
+    font-family: medrienda;
+}
+.one a{
+    background: #252525;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    display: inline;
+    font-family: baloo;
+}
+.four{
+    background:url(a1.jpg) ;
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+.two{
+    background: url(a1.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+.five{
+    background: url(a1.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+.five h2{
+    font-size: 65px;
+    font-family: big john;
+    margin: 0;
+}
+.five p{
+padding: 0 15%;
+font-size: 16px;
+font-family: merienda;
+}
+.three{
+    background: url(a1.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+}
+.six{
+    text-align: center;
+}
+.six input{
+    text-align: right;
+    width: 350px;
+    padding-left: 10%;
+    margin-bottom: 20px;
+    height: 30px;
+    border: 1px solid #000;
+}
+.six a{
+    display: block;
+    text-decoration: none;
+    width: 350px;
+    background: #000;
+    margin: 0 auto;
+    color: #fff;
+    padding: 10px 0;
+}
+#mutliscroll-nav span{
+    border: 1px solid #dc143c;
+    background: #dc143c;
+}
